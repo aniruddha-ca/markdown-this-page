@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown This Page</title>
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="icons/icon32.png" alt="" width="20" height="20" />
+        <span>Markdown This Page</span>
+      </div>
+
+      <div class="meta" id="pageMeta">
+        <img id="pageFavicon" alt="" width="16" height="16" hidden />
+        <span class="meta-title" id="pageTitle" title=""></span>
+        <a class="meta-url" id="pageUrl" href="#" target="_blank" rel="noopener"></a>
+      </div>
+
+      <div class="actions">
+        <div class="segmented" role="group" aria-label="View mode">
+          <button type="button" data-view="edit">Edit</button>
+          <button type="button" data-view="split" class="active">Split</button>
+          <button type="button" data-view="preview">Preview</button>
+        </div>
+        <button type="button" class="btn" id="btnCopy">Copy</button>
+        <button type="button" class="btn primary" id="btnDownload">Download .md</button>
+      </div>
+    </header>
+
+    <main class="workspace" id="workspace" data-view="split">
+      <section class="pane editor-pane">
+        <div class="pane-label">Markdown</div>
+        <textarea
+          id="editor"
+          spellcheck="false"
+          placeholder="Markdown will appear here..."
+        ></textarea>
+      </section>
+
+      <section class="pane preview-pane">
+        <div class="pane-label">Preview</div>
+        <article class="preview" id="preview"></article>
+      </section>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div class="empty-card">
+          <h1>Nothing to convert</h1>
+          <p id="emptyMessage">
+            Open a normal web page (not a browser internal page) and click the
+            extension icon.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="statusbar">
+      <span id="status">Ready</span>
+      <span id="stats"></span>
+    </footer>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <script src="lib/purify.min.js"></script>
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/turndown.js"></script>
+    <script src="lib/turndown-plugin-gfm.js"></script>
+    <script src="lib/readability.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>
