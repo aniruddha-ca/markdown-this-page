@@ -1,0 +1,15 @@
+# Build output
+dist/
+
+# Packed extension artifacts
+*.crx
+*.zip
+
+# Private signing key - NEVER commit this
+*.pem
+
+# OS
+.DS_Store
+# Python bytecode
+__pycache__/
+*.py[cod]

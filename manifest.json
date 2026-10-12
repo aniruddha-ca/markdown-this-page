@@ -3,6 +3,7 @@
   "name": "Markdown This Page",
   "version": "1.0.0",
   "description": "Convert the current webpage to Markdown, preview and edit it, then copy or download the .md file.",
+  "update_url": "https://aniruddha-ca.github.io/markdown_this_page/updates.xml",
   "permissions": ["activeTab", "scripting", "storage"],
   "action": {
     "default_title": "Convert this page to Markdown",

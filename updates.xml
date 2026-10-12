@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Self-hosted update manifest for "Markdown This Page".
+
+  How to use:
+  Current extension ID: ijeambfhiilieglbeobgfdofojofnjjp
+  (Chrome Web Store listing:
+   https://chromewebstore.google.com/detail/markdown-this-page/ijeambfhiilieglbeobgfdofojofnjjp)
+  If you repack with a different key, recompute the ID with:
+       python tools/extension_id.py markdown_this_page.pem
+  2. Set codebase to the HTTPS URL of the signed .crx for the latest version.
+     GitHub Releases "latest" URL (stable across versions):
+       https://github.com/aniruddha-ca/markdown_this_page/releases/latest/download/markdown_this_page.crx
+  3. Bump version to match manifest.json, then host this file at the URL that is
+     referenced by "update_url" in manifest.json (GitHub Pages serves repo files,
+     so committing it to the repo root works).
+-->
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='ijeambfhiilieglbeobgfdofojofnjjp'>
+    <updatecheck codebase='https://github.com/aniruddha-ca/markdown_this_page/releases/latest/download/markdown_this_page.crx' version='1.0.0' />
+  </app>
+</gupdate>
